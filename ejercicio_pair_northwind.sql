@@ -72,9 +72,6 @@ SELECT `product_id`, `product_name`, `unit_price`
     WHERE `unit_price` BETWEEN 15 AND 50;
     
 -- Selecciona los productos con unos precios dados:
-/*Queremos conocer los datos de los productos que tengan exactamente un precio de 18, 19 o 20 dólares
- (un rango muy concreto de precios del que la empresa quiere maximizar sus ventas en un futuro). 
- Usa IN para conseguirlo de manera eficiente.*/
  SELECT `product_id`, `product_name`, `unit_price`
 	FROM `products` 
     WHERE `unit_price` IN (18, 19 ,20);
