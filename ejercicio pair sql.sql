@@ -68,3 +68,20 @@ VALUES ("123",'2001-12-11', 1, 2, 1, 54.98), ("1234", '2005-05-23', 1, 1, 3, 89.
 UPDATE zapatillas
 SET color = "amarillas"
 WHERE color = "Rosas";
+
+/*Tabla empleados: Laura se ha cambiado de ciudad y ya no vive en Alcobendas, se fue cerquita del mar, 
+ahora vive en A Coruña.*/
+UPDATE empleados
+SET tienda = "A Coruña"
+WHERE tienda = "Alcobendas";
+
+/*Tabla clientes: El Numero de telefono de Monica esta mal!!! Metimos un digito de más. En realidad su 
+número es: 123456728*/
+UPDATE clientes
+SET telefono = "123456728"
+WHERE nombre = "Monica";
+
+/*Tabla facturas:El total de la factura de la zapatilla cuyo id es 2 es incorrecto.En realidad es: 89,91.*/
+UPDATE facturas
+SET TOTAL = 89.91
+WHERE id_factura = 2;
